@@ -1,0 +1,11 @@
+genrule(
+    name = "hello",
+    outs = ["hello_world.txt"],
+    cmd = "sleep 5 && echo 'Hello World!' > $@"
+)
+
+genrule(
+    name = "greetings",
+    outs = ["greetings_terra.txt"],
+    cmd = "echo 'Greetings, Terra!' > $@"
+)

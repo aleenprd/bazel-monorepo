@@ -1,0 +1,5 @@
+genrule(
+    name = "mom",
+    outs = ["hello_mom.txt"],
+    cmd = "sleep 5 && echo 'Hello Mom!' > $@"
+)
